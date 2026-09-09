@@ -1,1 +1,127 @@
-Nothing here yet...
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Índice</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    --bg: #14171C;
+    --surface: #1B1F26;
+    --card: #22272F;
+    --line: #2E343D;
+    --text: #F1F3F5;
+    --muted: #9AA3AD;
+    --dim: #6B7480;
+    --accent: #E53935;
+    --accent-2: #EF5350;
+    --display: "IBM Plex Sans Condensed", "Segoe UI Semibold", "Segoe UI", system-ui, sans-serif;
+    --body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+    --mono: "IBM Plex Mono", Consolas, "Cascadia Mono", monospace;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 15px/1.55 var(--body);
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  :focus-visible { outline: 2px solid var(--accent-2); outline-offset: 3px; }
+
+  .wrap { max-width: 1000px; margin: 0 auto; padding: 0 28px; }
+
+  .hero { border-bottom: 1px solid var(--line); background: var(--surface); }
+  .hero .wrap { padding: 48px 28px 38px; }
+  .eyebrow { font: 500 11.5px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+  .eyebrow b { color: var(--accent-2); font-weight: 500; }
+  h1 { font: 600 40px/1.05 var(--display); letter-spacing: -.01em; margin: 14px 0 0; }
+  .lead { max-width: 62ch; margin: 16px 0 0; color: var(--muted); font-size: 16px; }
+
+  main .wrap { padding-top: 40px; padding-bottom: 64px; }
+  .section-title { font: 500 11px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--dim); margin: 0 0 16px; }
+
+  .list { display: grid; gap: 16px; margin: 0; padding: 0; list-style: none; }
+
+  .entry {
+    display: block;
+    text-decoration: none;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--accent);
+    border-radius: 6px;
+    padding: 22px 24px;
+    transition: border-color .15s ease, background .15s ease, transform .15s ease;
+  }
+  .entry:hover { background: #262C35; border-color: #3A414B; border-left-color: var(--accent-2); transform: translateY(-1px); }
+  .entry h2 { font: 600 21px/1.2 var(--display); margin: 0; }
+  .entry h2 .arrow { color: var(--accent-2); margin-left: 8px; }
+  .entry p { color: var(--muted); margin: 10px 0 0; max-width: 70ch; }
+  .file { font: 500 12px/1 var(--mono); color: var(--dim); margin: 14px 0 0; }
+
+  .toc { margin: 16px 0 0; padding: 14px 0 0; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 8px; }
+  .toc span {
+    font: 500 11.5px/1 var(--mono);
+    letter-spacing: .04em;
+    color: var(--muted);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 6px 11px;
+  }
+
+  footer { border-top: 1px solid var(--line); }
+  footer .wrap { padding: 22px 28px 40px; }
+  footer p { margin: 0; font: 400 12.5px/1.5 var(--mono); color: var(--dim); }
+
+  @media (max-width: 640px) {
+    h1 { font-size: 32px; }
+    .hero .wrap { padding-top: 36px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow"><b>ZoneSoft</b> · páginas públicas</div>
+    <h1>Índice</h1>
+    <p class="lead">Apresentações e material de apoio publicados neste repositório.</p>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <h2 class="section-title">Páginas</h2>
+    <ul class="list">
+      <li>
+        <a class="entry" href="zsmob-ui-new.html">
+          <h2>ZSRest APP Interface — novo UI<span class="arrow">→</span></h2>
+          <p>Tema escuro, navegação lateral e cartões de estado nos três ecrãs que o operador vê: Principal, Acesso à Configuração e Configuração. Capturas reais do executável compilado (Debug/Win32), não do mockup.</p>
+          <div class="toc">
+            <span>Principal</span>
+            <span>Registo de Actividade</span>
+            <span>Sobre</span>
+            <span>Definições Gerais</span>
+            <span>Documentos e Periféricos</span>
+            <span>Integrações e Passwords</span>
+            <span>Ementa Digital</span>
+            <span>Questionário</span>
+          </div>
+          <p class="file">zsmob-ui-new.html</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>github.com/HugoRosarioZS/public</p>
+  </div>
+</footer>
+
+</body>
+</html>
